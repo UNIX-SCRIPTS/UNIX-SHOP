@@ -1,0 +1,193 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Outfit", serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+#shopContainer {
+    display: none;
+    background-image: url('https://media.discordapp.net/attachments/1334890589799321651/1342456625813786684/Frame_17.png?ex=67b9b3a9&is=67b86229&hm=85093241fc5feeb17f02de31087a635f906a283b2a567d6aaf71da942c9be007&=&format=webp&quality=lossless&width=1920&height=1080');
+    width: 100%;
+    max-width: 100%;
+    height: 100%;
+    text-align: center;
+    color: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+#header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+}
+
+#shopLogo {
+    height: 50px;
+}
+.header-text{
+    font-size: 20px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+#balance{
+    margin-right: 30px;
+    font-size: 18px;
+}
+#playerName{
+    color: rgb(255, 238, 0);
+    margin-top: 10px;
+    font-size: 30px;
+    letter-spacing: 3px;
+   
+}
+#shopItems {
+    position: absolute;
+    left: 20%;
+    top: 20%;
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 32px;
+    padding: 0px;
+    flex-direction: column;
+    max-height: 600px;
+    overflow-y: auto; 
+    padding-right: 15px;
+    padding-bottom: 20px;
+    font-weight: 300;
+}
+#shopItems::-webkit-scrollbar {
+    width: 4px;
+}
+
+#shopItems::-webkit-scrollbar-track {
+    background: #333; /* Dark track */
+    border-radius: 10px;
+   
+}
+
+#shopItems::-webkit-scrollbar-thumb {
+    background: #ffcc00; /* Yellow scrollbar thumb */
+    border-radius: 10px;
+}
+
+#shopItems::-webkit-scrollbar-thumb:hover {
+    background: #ffcc00; /* Slightly darker yellow on hover */
+}
+
+.header-text{
+    position: absolute;
+    left: 20%;
+    font-size: 15px;
+}
+.item-name{
+    font-weight: 300;
+}
+.shopItem {
+  
+    padding: 10px;
+    border-radius: 5px;
+    text-align: center;
+    transition: 0.3s;
+    width: 157px;
+    border: 1px solid rgb(255, 255, 255);
+}
+
+.shopItem:hover {
+    background-image: linear-gradient(rgba(255, 255, 255, 0), rgba(250, 250, 250, 0.205));
+}
+
+.shopItem img {
+    width: 80px;
+    height: 80px;
+}
+.buyBtn {
+    position: absolute;
+    background: #ffcc00;
+    color: black;
+    padding: 5px 10px;
+    border: none;
+    cursor: pointer;
+    margin-top: 5px;
+    border-radius: 15px;
+    transition: 0.3s;
+    display: none;
+    width: 61px;
+    font-size: 16px;
+    margin-left: 50px;
+}
+
+/* Show buy button on hover */
+.shopItem:hover .buyBtn {
+    display: block;
+}
+
+.buyBtn:hover {
+    background: #ffaa00;
+}
+
+#closeBtn {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background: red;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+
+
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 121%;
+    height: 158%;
+    background: rgba(0, 0, 0, 0.6);
+    backdrop-filter: blur(5px);
+    display: none;
+    z-index: 1000;
+}
+
+/* Centered Input Box */
+.input-box {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border: 1px solid rgba(255, 255, 255, 0.534);
+    padding: 20px;
+    border-radius: 8px;
+    text-align: center;
+    color: white;
+    border-radius: 8px;
+    z-index: 1001;
+}
+
+.input-box input {
+    width: 80%;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 8px;
+    border: none;
+}
+
+.input-buttons button {
+    margin: 5px;
+    padding: 11px 16px;
+    cursor: pointer;
+    background: #ffd600;
+    border: none;
+    border-radius: 8px;
+    width: 114px;
+}

@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body >
+    <div id="blurOverlay" class="overlay" style="display: none;"></div>
+
+<!-- Input Box in the Center -->
+<div id="purchaseInputBox" class="input-box" style="display: none;">
+    <h2>Enter Amount</h2>
+    <input type="number" id="purchaseAmount" placeholder="Amount" min="1" value="1">
+    <div class="input-buttons">
+        <button id="confirmPurchaseBtn">Confirm</button>
+        <button id="cancelPurchaseBtn">Cancel</button>
+    </div>
+</div>
+
+    <div id="shopContainer">
+        <div id="header">
+            <img src="images/logo.png" id="shopLogo">
+            <h2 class="header-text">Welcome <span id="playerName">Player</span></h2>
+            <div id="balance">BALANCE &nbsp;<span id="playerBalance" style="color: greenyellow;">4,909,411</span></div>
+
+        </div>
+
+        <div id="shopItems">
+            
+            <!-- Example Products 
+            <div class="shopItem">
+                <img src="images/sim_card.png" alt="SIM Card">
+                <h3>SIM Card</h3>
+                <p>$500</p>
+                <button class="buyBtn" onclick="showInput('sim_card')">Buy</button>
+                <div id="input-container-sim_card" style="display: none;">
+                    <input type="number" id="amount-sim_card" placeholder="Amount" min="1">
+                    <button onclick="confirmPurchase('sim_card')">Confirm</button>
+                </div>
+            </div>
+
+            <div class="shopItem">
+                <img src="images/backpack.png" alt="Level 1 Backpack">
+                <h3>Level 1 Backpack</h3>
+                <p>$3,000</p>
+                <button class="buyBtn" onclick="showInput('backpack')">Buy</button>
+                <div id="input-container-backpack" style="display: none;">
+                    <input type="number" id="amount-backpack" placeholder="Amount" min="1">
+                    <button onclick="confirmPurchase('backpack')">Confirm</button>
+                </div>
+            </div>
+            <div class="shopItem">
+                <img src="images/backpack.png" alt="Level 1 Backpack">
+                <h3>Level 1 Backpack</h3>
+                <p>$3,000</p>
+                <button class="buyBtn" onclick="showInput('backpack')">Buy</button>
+                <div id="input-container-backpack" style="display: none;">
+                    <input type="number" id="amount-backpack" placeholder="Amount" min="1">
+                    <button onclick="confirmPurchase('backpack')">Confirm</button>
+                </div>
+            </div><div class="shopItem">
+                <img src="images/backpack.png" alt="Level 1 Backpack">
+                <h3>Level 1 Backpack</h3>
+                <p>$3,000</p>
+                <button class="buyBtn" onclick="showInput('backpack')">Buy</button>
+                <div id="input-container-backpack" style="display: none;">
+                    <input type="number" id="amount-backpack" placeholder="Amount" min="1">
+                    <button onclick="confirmPurchase('backpack')">Confirm</button>
+                </div>
+            </div>
+            <div class="shopItem">
+                <img src="images/map.png" alt="Map of Los Santos">
+                <h3>Map of Los Santos</h3>
+                <p>$2,900</p>
+                <button class="buyBtn" onclick="showInput('map')">Buy</button>
+                <div id="input-container-map" style="display: none;">
+                    <input type="number" id="amount-map" placeholder="Amount" min="1">
+                    <button onclick="confirmPurchase('map')">Confirm</button>
+                </div>
+            </div>
+
+            <div class="shopItem">
+                <img src="images/cigarettes.png" alt="Cigarettes">
+                <h3>Cigarettes</h3>
+                <p>$900</p>
+                <button class="buyBtn" onclick="showInput('cigarettes')">Buy</button>
+                <div id="input-container-cigarettes" style="display: none;">
+                    <input type="number" id="amount-cigarettes" placeholder="Amount" min="1">
+                    <button onclick="confirmPurchase('cigarettes')">Confirm</button>
+                </div>
+            </div>
+
+            <div class="shopItem">
+                <img src="images/red_fabric.png" alt="Red Fabric">
+                <h3>Red Fabric</h3>
+                <p>$500</p>
+                <button class="buyBtn" onclick="showInput('red_fabric')">Buy</button>
+                <div id="input-container-red_fabric" style="display: none;">
+                    <input type="number" id="amount-red_fabric" placeholder="Amount" min="1">
+                    <button onclick="confirmPurchase('red_fabric')">Confirm</button>
+                </div>
+            </div>-->
+
+            
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
